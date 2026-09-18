@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasmin — Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="turtle-field" aria-hidden="true">
+    <span class="turtle t1">🐢</span><span class="turtle t2">🐢</span>
+    <span class="turtle t3">🐢</span><span class="turtle t4">🐢</span>
+    <span class="turtle t5">🐢</span><span class="turtle t6">🐢</span>
+    <span class="turtle t7">🐢</span><span class="turtle t8">🐢</span>
+  </div>
+
+  <header class="nav">
+    <a class="logo" href="#home">Tasmin<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode">☾</button>
+      <button id="chatOpen" class="chat-btn">Chat <span>↗</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MIT • CLASS OF 2026 • CREATIVE PROBLEM SOLVER</p>
+        <h1>Hi, I'm <em>Tasmin.</em></h1>
+        <p class="hero-text">
+          21 years old, MIT graduate, professional daydreamer, and serious pizza enthusiast.
+          I like building useful things, meeting interesting people, and taking very long walks on the beach.
+        </p>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#about">Explore my resume</a>
+          <a class="text-btn" href="#gallery">View photos ↓</a>
+        </div>
+        <div class="quick-facts">
+          <div><strong>21</strong><span>years old</span></div>
+          <div><strong>MIT</strong><span>graduate</span></div>
+          <div><strong>∞</strong><span>pizza slices</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="sun-ring"></div>
+        <img src="character-1.jpeg" alt="Tasmin standing and smiling">
+        <div class="status-pill"><span></span> Available for interesting projects</div>
+      </div>
+    </section>
+
+    <section id="about" class="section two-col">
+      <div>
+        <p class="eyebrow">01 — ABOUT ME</p>
+        <h2>A little yellow,<br><em>a lot curious.</em></h2>
+      </div>
+      <div class="about-text">
+        <p>
+          I graduated from MIT with a degree in Computer Science and a minor in
+          "figuring things out." I enjoy turning weird ideas into simple, useful
+          experiences and working with people who aren't afraid to ask, "What if?"
+        </p>
+        <p>
+          Outside of work, you'll usually find me walking by the beach, looking for
+          the best pizza in town, hanging out with turtles, or trying something new
+          just because it sounds fun.
+        </p>
+        <div class="tags">
+          <span>Problem solving</span><span>Design</span><span>Technology</span>
+          <span>Teamwork</span><span>Pizza research</span><span>Beach walks</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 — EXPERIENCE</p>
+          <h2>Things I've <em>worked on.</em></h2>
+        </div>
+        <p class="section-note">A fictional resume for a very real-looking character.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="job-year">2025—2026</div>
+          <div>
+            <h3>Product Design Intern <span>@ Bright Labs</span></h3>
+            <p>Designed playful interfaces, tested prototypes, and helped turn complicated ideas into products people actually enjoyed using.</p>
+          </div>
+        </article>
+        <article class="job">
+          <div class="job-year">2024—2025</div>
+          <div>
+            <h3>Student Researcher <span>@ MIT</span></h3>
+            <p>Explored human-computer interaction, built small experiments, and learned that the best solutions usually start with good questions.</p>
+          </div>
+        </article>
+        <article class="job">
+          <div class="job-year">2023—2024</div>
+          <div>
+            <h3>Team Lead <span>@ Tiny Ideas Club</span></h3>
+            <p>Led a small creative team making prototypes, games, and unnecessarily ambitious weekend projects.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 — GALLERY</p>
+          <h2>Proof that I have <em>range.</em></h2>
+        </div>
+        <div class="gallery-controls">
+          <button id="prevPhoto" aria-label="Previous photo">←</button>
+          <span id="photoCount">01 / 03</span>
+          <button id="nextPhoto" aria-label="Next photo">→</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="photo-stage">
+          <img id="galleryImage" src="character-1.jpeg" alt="Tasmin photo 1">
+          <div class="photo-caption">
+            <span id="photoLabel">01 / STANDING TALL</span>
+            <h3 id="photoTitle">Ready for whatever comes next.</h3>
+            <p id="photoDescription">A calm day, a big idea, and absolutely no reason to stand normally.</p>
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <button class="thumb active" data-index="0"><img src="character-1.jpeg" alt="Standing pose"></button>
+          <button class="thumb" data-index="1"><img src="character-2.jpeg" alt="Low pose"></button>
+          <button class="thumb" data-index="2"><img src="character-3.jpeg" alt="Peace sign pose"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">04 — CONTACT</p>
+        <h2>Let's make something <em>fun.</em></h2>
+      </div>
+      <div class="contact-card">
+        <p>Have a project, a pizza recommendation, or a turtle-related question?</p>
+        <button class="primary-btn" id="contactChat">Say hello ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Tasmin</span>
+    <span>Made with curiosity & too much pizza.</span>
+  </footer>
+
+  <aside id="chatPanel" class="chat-panel" aria-hidden="true">
+    <div class="chat-head">
+      <div><strong>Tasmin's Chat</strong><small>Usually replies eventually</small></div>
+      <button id="chatClose" aria-label="Close chat">×</button>
+    </div>
+    <div id="messages" class="messages">
+      <div class="bubble bot">Hey! 👋 Ask me anything about my resume, MIT, pizza, or turtles.</div>
+    </div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" type="text" placeholder="Type a message..." autocomplete="off">
+      <button type="submit">→</button>
+    </form>
+  </aside>
+
+  <script src="game.js"></script>
+</body>
+</html>
