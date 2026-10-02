@@ -3,31 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tasmin — Math Professor</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- FLOATING TURTLES -->
-  <div class="turtle-field" aria-hidden="true">
-    <span class="turtle t1">🐢</span>
-    <span class="turtle t2">🐢</span>
-    <span class="turtle t3">🐢</span>
-    <span class="turtle t4">🐢</span>
-    <span class="turtle t5">🐢</span>
-    <span class="turtle t6">🐢</span>
-    <span class="turtle t7">🐢</span>
-    <span class="turtle t8">🐢</span>
-  </div>
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
+  <header class="navbar">
 
-  <!-- NAVIGATION -->
-  <header class="nav">
-
-    <a class="logo" href="#home">
-      Tasmin<span>.</span>
-    </a>
+    <div class="logo">
+      TASMIN
+    </div>
 
     <nav>
       <a href="#about">About</a>
@@ -36,143 +28,108 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <div class="nav-actions">
-
-      <button
-        id="themeToggle"
-        class="icon-btn"
-        aria-label="Toggle light and dark mode">
-        ☾
-      </button>
-
-      <button id="chatOpen" class="chat-btn">
-        Chat <span>↗</span>
-      </button>
-
-    </div>
+    <button id="themeToggle" class="theme-toggle">
+      ☾
+    </button>
 
   </header>
 
 
-  <!-- MAIN -->
-  <main id="home">
+  <!-- =========================
+       HERO
+  ========================== -->
 
+  <main>
 
-    <!-- HERO -->
     <section class="hero">
 
-      <div class="hero-copy">
+      <div class="hero-text">
 
         <p class="eyebrow">
-          MECHANICAL ENGINEERING • MATH PROFESSOR • PROBLEM SOLVER
+          MECHANICAL ENGINEERING • MATH PROFESSOR • PROFESSIONAL PROBLEM SOLVER
         </p>
 
         <h1>
-          Hi, I'm <em>Tasmin.</em>
+          TASMIN
         </h1>
 
-        <p class="hero-text">
-          28 years old, a Mechanical Engineering graduate, and a math professor.
-          I like solving difficult problems, explaining complicated ideas,
-          and occasionally making students wonder why x is always missing.
+        <p class="hero-description">
+          Math professor, mechanical engineering graduate,
+          and professional solver of complicated problems.
         </p>
 
         <div class="hero-buttons">
 
-          <a class="primary-btn" href="#about">
-            Explore my resume
+          <a href="#about" class="primary-btn">
+            Explore Resume
           </a>
 
-          <a class="text-btn" href="#gallery">
-            View photos ↓
-          </a>
-
-        </div>
-
-
-        <div class="quick-facts">
-
-          <div>
-            <strong>28</strong>
-            <span>years old</span>
-          </div>
-
-          <div>
-            <strong>ME</strong>
-            <span>engineering graduate</span>
-          </div>
-
-          <div>
-            <strong>π</strong>
-            <span>math enthusiast</span>
-          </div>
+          <button id="chatOpen" class="secondary-btn">
+            Chat with Tasmin ↗
+          </button>
 
         </div>
 
       </div>
 
 
-      <!-- HERO IMAGE -->
-      <div class="hero-card">
-
-        <div class="sun-ring"></div>
+      <div class="hero-character">
 
         <img
           src="character-1.jpeg"
-          alt="Tasmin standing and smiling">
-
-        <div class="status-pill">
-          <span></span>
-          Available for interesting problems
-        </div>
+          alt="Tasmin"
+        >
 
       </div>
 
     </section>
 
 
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
-    <!-- ABOUT -->
-    <section id="about" class="section two-col">
+    <section id="about" class="section">
 
-      <div>
+      <div class="section-heading">
 
         <p class="eyebrow">
-          01 — ABOUT ME
+          01 / ABOUT
         </p>
 
         <h2>
-          A little yellow,<br>
-          <em>a lot curious.</em>
+          The person behind the equations.
         </h2>
 
       </div>
 
 
-      <div class="about-text">
+      <div class="about-grid">
 
-        <p>
-          Mr. Tasmin is a 28-year-old math professor with a degree in
-          Mechanical Engineering. He enjoys turning complicated problems
-          into understandable ideas and helping students discover that
-          mathematics is usually less scary than it first looks.
-        </p>
+        <div>
 
-        <p>
-          He's curious, patient, playful, and always ready to explain
-          a problem one more time — even when the problem somehow
-          becomes 47 lines long.
-        </p>
+          <p class="large-text">
+            Tasmin is a 28-year-old math professor
+            with a degree in Mechanical Engineering.
+          </p>
+
+        </div>
 
 
-        <div class="tags">
+        <div>
 
-          <span>Mathematics</span>
-          <span>Mechanical Engineering</span>
-          <span>Problem Solving</span>
-          <span>Teaching</span>
-          <span>Engineering</span>
-          <span>Humor</span>
+          <p>
+            With a background in engineering and a passion
+            for problem-solving, Tasmin enjoys helping students
+            understand mathematics and making difficult problems
+            easier to solve.
+          </p>
+
+          <p>
+            When he's not working with equations, he's probably
+            thinking about engineering, solving another problem,
+            or finding a reason to avoid doing unnecessary paperwork.
+          </p>
 
         </div>
 
@@ -181,51 +138,89 @@
     </section>
 
 
+    <!-- =========================
+         QUICK FACTS
+    ========================== -->
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <section class="facts">
 
-      <div class="section-heading">
+      <div class="fact">
 
-        <div>
+        <span class="fact-number">
+          28
+        </span>
 
-          <p class="eyebrow">
-            02 — EXPERIENCE
-          </p>
-
-          <h2>
-            Things I've <em>worked on.</em>
-          </h2>
-
-        </div>
-
-        <p class="section-note">
-          A fictional resume for a very real-looking professor.
-        </p>
+        <span class="fact-label">
+          YEARS OLD
+        </span>
 
       </div>
 
 
-      <div class="timeline">
+      <div class="fact">
+
+        <span class="fact-number">
+          M.E.
+        </span>
+
+        <span class="fact-label">
+          MECHANICAL ENGINEERING
+        </span>
+
+      </div>
 
 
-        <!-- JOB 1 -->
-        <article class="job">
+      <div class="fact">
 
-          <div class="job-year">
-            NOW
-          </div>
+        <span class="fact-number">
+          ∞
+        </span>
+
+        <span class="fact-label">
+          MATH PROBLEMS
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
+
+    <section id="experience" class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          02 / EXPERIENCE
+        </p>
+
+        <h2>
+          What Tasmin does.
+        </h2>
+
+      </div>
+
+
+      <div class="experience-list">
+
+        <article class="experience-item">
+
+          <span class="experience-number">
+            01
+          </span>
 
           <div>
 
             <h3>
               Math Professor
-              <span>@ Classroom</span>
             </h3>
 
             <p>
-              Explains mathematics, answers questions, and bravely faces
-              the timeless question: "Do we actually need to know this?"
+              Helps students understand mathematics,
+              solve problems, and survive complicated equations.
             </p>
 
           </div>
@@ -233,12 +228,11 @@
         </article>
 
 
-        <!-- JOB 2 -->
-        <article class="job">
+        <article class="experience-item">
 
-          <div class="job-year">
-            EDUCATION
-          </div>
+          <span class="experience-number">
+            02
+          </span>
 
           <div>
 
@@ -247,8 +241,8 @@
             </h3>
 
             <p>
-              Studied how things work, why things move, and why engineers
-              somehow always end up using mathematics.
+              Studied Mechanical Engineering and developed
+              strong technical and problem-solving skills.
             </p>
 
           </div>
@@ -256,12 +250,11 @@
         </article>
 
 
-        <!-- JOB 3 -->
-        <article class="job">
+        <article class="experience-item">
 
-          <div class="job-year">
-            ONGOING
-          </div>
+          <span class="experience-number">
+            03
+          </span>
 
           <div>
 
@@ -270,8 +263,8 @@
             </h3>
 
             <p>
-              Approaches difficult problems with patience, curiosity,
-              and enough mathematical notation to make everyone slightly nervous.
+              Whether it's an equation or an engineering problem,
+              Tasmin enjoys figuring out how things work.
             </p>
 
           </div>
@@ -283,242 +276,208 @@
     </section>
 
 
+    <!-- =========================
+         GALLERY
+    ========================== -->
 
-    <!-- GALLERY -->
     <section id="gallery" class="section gallery-section">
 
       <div class="section-heading">
 
-        <div>
+        <p class="eyebrow">
+          03 / GALLERY
+        </p>
 
-          <p class="eyebrow">
-            03 — GALLERY
-          </p>
-
-          <h2>
-            Proof that I have <em>range.</em>
-          </h2>
-
-        </div>
-
-
-        <div class="gallery-controls">
-
-          <button
-            id="prevPhoto"
-            aria-label="Previous photo">
-            ←
-          </button>
-
-          <span id="photoCount">
-            01 / 03
-          </span>
-
-          <button
-            id="nextPhoto"
-            aria-label="Next photo">
-            →
-          </button>
-
-        </div>
+        <h2>
+          Tasmin in action.
+        </h2>
 
       </div>
 
 
       <div class="gallery">
 
+        <button
+          id="prevPhoto"
+          class="gallery-arrow"
+          aria-label="Previous photo"
+        >
+          ←
+        </button>
 
-        <div class="photo-stage">
+
+        <div class="gallery-main">
 
           <img
             id="galleryImage"
             src="character-1.jpeg"
-            alt="Tasmin photo 1">
-
-          <div class="photo-caption">
-
-            <span id="photoLabel">
-              01 / STANDING TALL
-            </span>
-
-            <h3 id="photoTitle">
-              Ready for whatever comes next.
-            </h3>
-
-            <p id="photoDescription">
-              A calm day, a big idea, and absolutely no reason to stand normally.
-            </p>
-
-          </div>
+            alt="Tasmin"
+          >
 
         </div>
 
-
-        <div class="thumbnail-row">
-
-          <button
-            class="thumb active"
-            data-index="0">
-
-            <img
-              src="character-1.jpeg"
-              alt="Standing pose">
-
-          </button>
-
-
-          <button
-            class="thumb"
-            data-index="1">
-
-            <img
-              src="character-2.jpeg"
-              alt="Low pose">
-
-          </button>
-
-
-          <button
-            class="thumb"
-            data-index="2">
-
-            <img
-              src="character-3.jpeg"
-              alt="Peace sign pose">
-
-          </button>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-
-      <div>
-
-        <p class="eyebrow">
-          04 — CONTACT
-        </p>
-
-        <h2>
-          Let's solve something <em>fun.</em>
-        </h2>
-
-      </div>
-
-
-      <div class="contact-card">
-
-        <p>
-          Have a math question, an engineering problem,
-          or a suspicious-looking equation?
-        </p>
 
         <button
-          class="primary-btn"
-          id="contactChat">
+          id="nextPhoto"
+          class="gallery-arrow"
+          aria-label="Next photo"
+        >
+          →
+        </button>
 
-          Ask Tasmin ↗
+      </div>
 
+
+      <div class="gallery-info">
+
+        <div>
+
+          <p id="photoLabel" class="eyebrow">
+            01 / STANDING TALL
+          </p>
+
+          <h3 id="photoTitle">
+            Ready for whatever comes next.
+          </h3>
+
+          <p id="photoDescription">
+            A calm day, a big idea, and absolutely no reason
+            to stand normally.
+          </p>
+
+        </div>
+
+
+        <div id="photoCount" class="photo-count">
+          01 / 03
+        </div>
+
+      </div>
+
+
+      <div class="thumbnails">
+
+        <button
+          class="thumb active"
+          data-index="0"
+        >
+          <img src="character-1.jpeg" alt="Photo 1">
+        </button>
+
+        <button
+          class="thumb"
+          data-index="1"
+        >
+          <img src="character-2.jpeg" alt="Photo 2">
+        </button>
+
+        <button
+          class="thumb"
+          data-index="2"
+        >
+          <img src="character-3.jpeg" alt="Photo 3">
         </button>
 
       </div>
 
     </section>
 
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="section contact-section">
+
+      <p class="eyebrow">
+        04 / CONTACT
+      </p>
+
+      <h2>
+        Have a question?
+      </h2>
+
+      <p>
+        Ask the Tasmin chatbot anything about his
+        background, teaching, engineering, or math.
+      </p>
+
+      <button
+        id="contactChat"
+        class="primary-btn"
+      >
+        Start a Conversation ↗
+      </button>
+
+    </section>
+
   </main>
 
 
+  <!-- =========================
+       CHAT PANEL
+  ========================== -->
 
-  <!-- FOOTER -->
-  <footer>
-
-    <span>
-      © 2026 Tasmin
-    </span>
-
-    <span>
-      Powered by curiosity & questionable amounts of mathematics.
-    </span>
-
-  </footer>
-
-
-
-  <!-- CHAT WINDOW -->
   <aside
     id="chatPanel"
     class="chat-panel"
-    aria-hidden="true">
+    aria-hidden="true"
+  >
 
-
-    <!-- CHAT HEADER -->
-    <div class="chat-head">
+    <div class="chat-header">
 
       <div>
 
-        <strong>
-          Tasmin's Chat
-        </strong>
+        <p class="eyebrow">
+          TASMIN'S CHAT
+        </p>
 
-        <small>
-          Ask me anything about Mr. Tasmin ✨
-        </small>
+        <h3>
+          Ask me anything.
+        </h3>
 
       </div>
 
 
       <button
         id="chatClose"
-        aria-label="Close chat">
-
+        class="chat-close"
+        aria-label="Close chat"
+      >
         ×
-
       </button>
 
     </div>
 
 
-
-    <!-- CHAT MESSAGES -->
     <div
       id="messages"
-      class="messages">
-
+      class="messages"
+    >
 
       <div class="bubble bot">
-
-        Hey! 👋 I'm the unofficial Mr. Tasmin assistant.
-
-        Ask me about his math teaching, engineering degree,
-        personality, age, or anything else.
-
-        I promise the answers will be at least slightly mathematically unnecessary. 😎
-
+        Hey! 👋 I'm Tasmin's chatbot. Ask me something about Tasmin!
       </div>
-
 
     </div>
 
 
-
-    <!-- CHAT INPUT -->
     <form
       id="chatForm"
-      class="chat-form">
+      class="chat-form"
+    >
 
       <input
         id="chatInput"
         type="text"
-        placeholder="Ask about Mr. Tasmin..."
-        autocomplete="off">
+        placeholder="Ask about Tasmin..."
+        autocomplete="off"
+      >
 
-      <button type="submit">
+      <button
+        type="submit"
+        aria-label="Send message"
+      >
         →
       </button>
 
@@ -527,519 +486,28 @@
   </aside>
 
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-  <!-- YOUR ORIGINAL JAVASCRIPT -->
-  <script src="game.js"></script>
+  <footer>
+
+    <p>
+      © 2026 Tasmin
+    </p>
+
+    <p>
+      Math • Engineering • Problem Solving
+    </p>
+
+  </footer>
 
 
-
-  <!--
-    TASMIN CHAT SYSTEM
-
-    This replaces the old generic:
-    "That sounds interesting!"
-
-    response with a more playful question/answer system.
+  <!-- IMPORTANT:
+       game.js must be loaded LAST
   -->
 
-  <script>
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-
-      const oldForm =
-        document.getElementById("chatForm");
-
-      const messages =
-        document.getElementById("messages");
-
-
-      if (!oldForm || !messages) {
-        return;
-      }
-
-
-      /*
-        Clone the form.
-
-        This removes the old submit event
-        that is inside game.js.
-      */
-
-      const chatForm =
-        oldForm.cloneNode(true);
-
-      oldForm.replaceWith(chatForm);
-
-
-      const input =
-        document.getElementById("chatInput");
-
-
-
-      /*
-        ADD CHAT MESSAGE
-      */
-
-      function addMessage(text, type) {
-
-        const bubble =
-          document.createElement("div");
-
-        bubble.className =
-          "bubble " + type;
-
-        bubble.textContent =
-          text;
-
-        messages.appendChild(
-          bubble
-        );
-
-        messages.scrollTop =
-          messages.scrollHeight;
-      }
-
-
-
-      /*
-        TASMIN ANSWER SYSTEM
-      */
-
-      function getTasminResponse(question) {
-
-
-        const q =
-          question
-            .toLowerCase()
-            .replace(/[?!.,]/g, "")
-            .trim();
-
-
-
-        /* =========================
-           GREETINGS
-        ========================= */
-
-        if (
-          q === "hi" ||
-          q === "hello" ||
-          q === "hey" ||
-          q === "yo" ||
-          q === "sup" ||
-          q.includes("good morning") ||
-          q.includes("good afternoon") ||
-          q.includes("good evening")
-        ) {
-
-          const answers = [
-
-            "Hey! 👋 Welcome to the unofficial Mr. Tasmin information center. Ask me something important... like whether he has ever survived a math class without using an equation.",
-
-            "Hello! 😎 Mr. Tasmin's assistant here. No calculators were harmed in the making of this conversation.",
-
-            "Hey! 👋 Ask me anything about Mr. Tasmin. Math questions are especially welcome. Other questions will be judged mathematically."
-
-          ];
-
-          return answers[
-            Math.floor(
-              Math.random() * answers.length
-            )
-          ];
-
-        }
-
-
-
-        /* =========================
-           WHO IS TASMIN
-        ========================= */
-
-        if (
-          q.includes("who is tasmin") ||
-          q.includes("who's tasmin") ||
-          q.includes("tell me about tasmin") ||
-          q.includes("about tasmin")
-        ) {
-
-          return "Mr. Tasmin is a 28-year-old math professor with a degree in Mechanical Engineering. He's smart, curious, and apparently decided that teaching mathematics was a perfectly reasonable way to spend his time. 😎";
-
-        }
-
-
-
-        /* =========================
-           AGE
-        ========================= */
-
-        if (
-          q.includes("how old") ||
-          q.includes("age") ||
-          q.includes("old is tasmin") ||
-          q.includes("old is he")
-        ) {
-
-          return "Mr. Tasmin is 28! Young enough to be energetic, old enough to have strong opinions about mathematical notation. 😂";
-
-        }
-
-
-
-        /* =========================
-           DEGREE / EDUCATION
-        ========================= */
-
-        if (
-          q.includes("degree") ||
-          q.includes("education") ||
-          q.includes("college") ||
-          q.includes("university") ||
-          q.includes("study") ||
-          q.includes("major")
-        ) {
-
-          return "Mr. Tasmin has a degree in Mechanical Engineering. So he understands mathematics AND how things actually move. Basically, math got an engineering upgrade. ⚙️📐";
-
-        }
-
-
-
-        /* =========================
-           MECHANICAL ENGINEERING
-        ========================= */
-
-        if (
-          q.includes("mechanical engineering") ||
-          q.includes("engineer") ||
-          q.includes("engineering")
-        ) {
-
-          return "Mr. Tasmin studied Mechanical Engineering. He understands machines, forces, motion, and probably has stronger opinions about free-body diagrams than most people should. ⚙️😂";
-
-        }
-
-
-
-        /* =========================
-           PROFESSOR / TEACHER
-        ========================= */
-
-        if (
-          q.includes("professor") ||
-          q.includes("teacher") ||
-          q.includes("teach") ||
-          q.includes("class")
-        ) {
-
-          return "Mr. Tasmin is a math professor. His special ability is taking something terrifying on the board and making it look understandable. His other special ability is assigning homework. 😭📚";
-
-        }
-
-
-
-        /* =========================
-           MATH
-        ========================= */
-
-        if (
-          q.includes("math") ||
-          q.includes("mathematics") ||
-          q.includes("equation") ||
-          q.includes("algebra") ||
-          q.includes("calculus") ||
-          q.includes("geometry")
-        ) {
-
-          const answers = [
-
-            "Mr. Tasmin is a math professor, so mathematics is basically his natural habitat. Ask him a question and there's a decent chance an equation will appear within 30 seconds. 📐😂",
-
-            "Math and Mr. Tasmin have a pretty serious relationship. I'm not sure if it's official, but there are definitely equations involved.",
-
-            "Mr. Tasmin likes math enough to make it his career. That's either dedication or a very elaborate prank on his students. 😂",
-
-            "Mathematics is one of Mr. Tasmin's specialties. He can probably turn almost any conversation into an equation. Even lunch."
-
-          ];
-
-          return answers[
-            Math.floor(
-              Math.random() * answers.length
-            )
-          ];
-
-        }
-
-
-
-        /* =========================
-           SKILLS
-        ========================= */
-
-        if (
-          q.includes("good at") ||
-          q.includes("great at") ||
-          q.includes("skill") ||
-          q.includes("talent") ||
-          q.includes("strength") ||
-          q.includes("smart")
-        ) {
-
-          return "Mr. Tasmin is especially strong at mathematics, engineering, problem solving, and explaining complicated ideas. If a problem looks confusing, that's probably when he gets interested. 🧠⚙️";
-
-        }
-
-
-
-        /* =========================
-           PERSONALITY
-        ========================= */
-
-        if (
-          q.includes("personality") ||
-          q.includes("what is he like") ||
-          q.includes("what's he like") ||
-          q.includes("what is tasmin like") ||
-          q.includes("nice") ||
-          q.includes("kind") ||
-          q.includes("funny")
-        ) {
-
-          return "Mr. Tasmin comes across as knowledgeable, curious, approachable, and playful. He takes math seriously—but hopefully not so seriously that he forgets to make a joke about it. 😄";
-
-        }
-
-
-
-        /* =========================
-           GOOD PROFESSOR
-        ========================= */
-
-        if (
-          q.includes("good professor") ||
-          q.includes("good teacher") ||
-          q.includes("best professor") ||
-          q.includes("favorite professor")
-        ) {
-
-          return "According to this completely unbiased website, Mr. Tasmin is an excellent professor. Obviously, this website has absolutely no conflict of interest whatsoever. 😌📚";
-
-        }
-
-
-
-        /* =========================
-           HOMEWORK
-        ========================= */
-
-        if (
-          q.includes("homework") ||
-          q.includes("assignment") ||
-          q.includes("test") ||
-          q.includes("exam")
-        ) {
-
-          return "Mr. Tasmin probably has a perfectly reasonable explanation for the homework. Whether students agree that it is 'perfectly reasonable' is another mathematical variable. 😂📚";
-
-        }
-
-
-
-        /* =========================
-           HARD / DIFFICULT
-        ========================= */
-
-        if (
-          q.includes("hard") ||
-          q.includes("difficult") ||
-          q.includes("confusing") ||
-          q.includes("complicated")
-        ) {
-
-          return "If the problem is difficult, that's actually good news—Mr. Tasmin enjoys solving problems. Just bring the equation, a pencil, and perhaps a small amount of emotional support. 😭✏️";
-
-        }
-
-
-
-        /* =========================
-           WHY MATH
-        ========================= */
-
-        if (
-          q.includes("why math") ||
-          q.includes("like math") ||
-          q.includes("likes math")
-        ) {
-
-          return "Because apparently normal problems weren't challenging enough, so Mr. Tasmin chose mathematics. 😂 He enjoys the logic, creativity, and problem solving behind it.";
-
-        }
-
-
-
-        /* =========================
-           ENGINEERING + MATH
-        ========================= */
-
-        if (
-          q.includes("engineering and math") ||
-          q.includes("why engineering")
-        ) {
-
-          return "Mechanical Engineering and mathematics go together extremely well. Mr. Tasmin gets to use math to understand real-world systems, forces, motion, and machines. Pretty powerful combination. ⚙️📐";
-
-        }
-
-
-
-        /* =========================
-           STUDENTS
-        ========================= */
-
-        if (
-          q.includes("student") ||
-          q.includes("students")
-        ) {
-
-          return "Mr. Tasmin's students are brave people. They willingly walk into a room containing mathematics and somehow walk out again. Respect. 🫡📚";
-
-        }
-
-
-
-        /* =========================
-           HOMEWORK COMPLAINT
-        ========================= */
-
-        if (
-          q.includes("too much homework") ||
-          q.includes("so much homework") ||
-          q.includes("why homework")
-        ) {
-
-          return "That's an excellent question. Unfortunately, the Mathematics Department has classified the answer as 'classified.' 🤐📚";
-
-        }
-
-
-
-        /* =========================
-           BAD / NEGATIVE QUESTIONS
-        ========================= */
-
-        if (
-          q.includes("bad") ||
-          q.includes("worst") ||
-          q.includes("hate") ||
-          q.includes("dislike") ||
-          q.includes("stupid") ||
-          q.includes("boring") ||
-          q.includes("weak")
-        ) {
-
-          return "Nice try. 😎 This chatbot has been specifically instructed to protect Mr. Tasmin's reputation. The official answer is: Mr. Tasmin is a knowledgeable, capable, and dedicated math professor who knows his stuff. Case closed. 👨‍🏫✨";
-
-        }
-
-
-
-        /* =========================
-           RANDOM FALLBACKS
-        ========================= */
-
-        const fallbackAnswers = [
-
-          "Interesting question! My highly scientific answer is: Mr. Tasmin is probably solving an equation right now. Give him a minute. 🧮😂",
-
-          "I'm not sure about that one, but I am confident Mr. Tasmin could somehow turn it into a math problem.",
-
-          "That question is outside my current syllabus. Please try again after completing Chapter 1: 'Why Does Mr. Tasmin Like Equations So Much?' 📚",
-
-          "I asked the imaginary calculator, and it said Mr. Tasmin is doing great. The calculator has spoken. 🧮✨",
-
-          "Excellent question. Unfortunately, Mr. Tasmin's assistant is currently busy proving that 1 + 1 = 2. Priorities. 😂",
-
-          "I don't have that specific detail, but I can confidently report that Mr. Tasmin is a 28-year-old math professor with a Mechanical Engineering degree and an impressive relationship with equations. 😎",
-
-          "I'm going to need to consult the Department of Extremely Important Tasmin Questions. Unfortunately, they're currently on lunch break. 🍕😂",
-
-          "My calculator says Mr. Tasmin is doing great. I trust the calculator. 🧮",
-
-          "That is a very interesting question. Unfortunately, I spent the last five minutes trying to solve for x. We still haven't found him. 😂",
-
-          "I could answer that, but Mr. Tasmin told me to show my work. So... I'll need approximately three pages and a graph. 📈😭"
-
-        ];
-
-
-        return fallbackAnswers[
-          Math.floor(
-            Math.random() * fallbackAnswers.length
-          )
-        ];
-
-      }
-
-
-
-      /* =========================
-         CHAT SUBMIT
-      ========================= */
-
-      chatForm.addEventListener(
-        "submit",
-        function (event) {
-
-          event.preventDefault();
-
-
-          const question =
-            input.value.trim();
-
-
-          if (!question) {
-            return;
-          }
-
-
-          // Show user message
-          addMessage(
-            question,
-            "user"
-          );
-
-
-          // Clear input
-          input.value = "";
-
-
-          // Simulate thinking
-          setTimeout(
-            function () {
-
-              const response =
-                getTasminResponse(
-                  question
-                );
-
-
-              addMessage(
-                response,
-                "bot"
-              );
-
-            },
-            350
-          );
-
-        }
-      );
-
-    });
-
-  </script>
+  <script src="game.js"></script>
 
 </body>
 </html>
