@@ -6,6 +6,7 @@
   <title>Tasmin — Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="turtle-field" aria-hidden="true">
     <span class="turtle t1">🐢</span><span class="turtle t2">🐢</span>
@@ -16,12 +17,14 @@
 
   <header class="nav">
     <a class="logo" href="#home">Tasmin<span>.</span></a>
+
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
+
     <div class="nav-actions">
       <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode">☾</button>
       <button id="chatOpen" class="chat-btn">Chat <span>↗</span></button>
@@ -29,18 +32,24 @@
   </header>
 
   <main id="home">
+
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">MIT • CLASS OF 2026 • CREATIVE PROBLEM SOLVER</p>
+
         <h1>Hi, I'm <em>Tasmin.</em></h1>
+
         <p class="hero-text">
           21 years old, MIT graduate, professional daydreamer, and serious pizza enthusiast.
           I like building useful things, meeting interesting people, and taking very long walks on the beach.
         </p>
+
         <div class="hero-buttons">
           <a class="primary-btn" href="#about">Explore my resume</a>
           <a class="text-btn" href="#gallery">View photos ↓</a>
         </div>
+
         <div class="quick-facts">
           <div><strong>21</strong><span>years old</span></div>
           <div><strong>MIT</strong><span>graduate</span></div>
@@ -51,73 +60,109 @@
       <div class="hero-card">
         <div class="sun-ring"></div>
         <img src="character-1.jpeg" alt="Tasmin standing and smiling">
-        <div class="status-pill"><span></span> Available for interesting projects</div>
+        <div class="status-pill">
+          <span></span> Available for interesting projects
+        </div>
       </div>
     </section>
 
+
+    <!-- ABOUT -->
     <section id="about" class="section two-col">
       <div>
         <p class="eyebrow">01 — ABOUT ME</p>
         <h2>A little yellow,<br><em>a lot curious.</em></h2>
       </div>
+
       <div class="about-text">
         <p>
           I graduated from MIT with a degree in Computer Science and a minor in
           "figuring things out." I enjoy turning weird ideas into simple, useful
           experiences and working with people who aren't afraid to ask, "What if?"
         </p>
+
         <p>
           Outside of work, you'll usually find me walking by the beach, looking for
           the best pizza in town, hanging out with turtles, or trying something new
           just because it sounds fun.
         </p>
+
         <div class="tags">
-          <span>Problem solving</span><span>Design</span><span>Technology</span>
-          <span>Teamwork</span><span>Pizza research</span><span>Beach walks</span>
+          <span>Problem solving</span>
+          <span>Design</span>
+          <span>Technology</span>
+          <span>Teamwork</span>
+          <span>Pizza research</span>
+          <span>Beach walks</span>
         </div>
       </div>
     </section>
 
+
+    <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="section-heading">
         <div>
           <p class="eyebrow">02 — EXPERIENCE</p>
           <h2>Things I've <em>worked on.</em></h2>
         </div>
-        <p class="section-note">A fictional resume for a very real-looking character.</p>
+
+        <p class="section-note">
+          A fictional resume for a very real-looking character.
+        </p>
       </div>
 
       <div class="timeline">
+
         <article class="job">
           <div class="job-year">2025—2026</div>
+
           <div>
             <h3>Product Design Intern <span>@ Bright Labs</span></h3>
-            <p>Designed playful interfaces, tested prototypes, and helped turn complicated ideas into products people actually enjoyed using.</p>
+            <p>
+              Designed playful interfaces, tested prototypes, and helped turn
+              complicated ideas into products people actually enjoyed using.
+            </p>
           </div>
         </article>
+
         <article class="job">
           <div class="job-year">2024—2025</div>
+
           <div>
             <h3>Student Researcher <span>@ MIT</span></h3>
-            <p>Explored human-computer interaction, built small experiments, and learned that the best solutions usually start with good questions.</p>
+            <p>
+              Explored human-computer interaction, built small experiments,
+              and learned that the best solutions usually start with good questions.
+            </p>
           </div>
         </article>
+
         <article class="job">
           <div class="job-year">2023—2024</div>
+
           <div>
             <h3>Team Lead <span>@ Tiny Ideas Club</span></h3>
-            <p>Led a small creative team making prototypes, games, and unnecessarily ambitious weekend projects.</p>
+            <p>
+              Led a small creative team making prototypes, games, and
+              unnecessarily ambitious weekend projects.
+            </p>
           </div>
         </article>
+
       </div>
     </section>
 
+
+    <!-- GALLERY -->
     <section id="gallery" class="section gallery-section">
+
       <div class="section-heading">
         <div>
           <p class="eyebrow">03 — GALLERY</p>
           <h2>Proof that I have <em>range.</em></h2>
         </div>
+
         <div class="gallery-controls">
           <button id="prevPhoto" aria-label="Previous photo">←</button>
           <span id="photoCount">01 / 03</span>
@@ -126,53 +171,461 @@
       </div>
 
       <div class="gallery">
+
         <div class="photo-stage">
-          <img id="galleryImage" src="character-1.jpeg" alt="Tasmin photo 1">
+          <img
+            id="galleryImage"
+            src="character-1.jpeg"
+            alt="Tasmin photo 1"
+          >
+
           <div class="photo-caption">
             <span id="photoLabel">01 / STANDING TALL</span>
-            <h3 id="photoTitle">Ready for whatever comes next.</h3>
-            <p id="photoDescription">A calm day, a big idea, and absolutely no reason to stand normally.</p>
+
+            <h3 id="photoTitle">
+              Ready for whatever comes next.
+            </h3>
+
+            <p id="photoDescription">
+              A calm day, a big idea, and absolutely no reason to stand normally.
+            </p>
           </div>
         </div>
+
         <div class="thumbnail-row">
-          <button class="thumb active" data-index="0"><img src="character-1.jpeg" alt="Standing pose"></button>
-          <button class="thumb" data-index="1"><img src="character-2.jpeg" alt="Low pose"></button>
-          <button class="thumb" data-index="2"><img src="character-3.jpeg" alt="Peace sign pose"></button>
+          <button class="thumb active" data-index="0">
+            <img src="character-1.jpeg" alt="Standing pose">
+          </button>
+
+          <button class="thumb" data-index="1">
+            <img src="character-2.jpeg" alt="Low pose">
+          </button>
+
+          <button class="thumb" data-index="2">
+            <img src="character-3.jpeg" alt="Peace sign pose">
+          </button>
         </div>
+
       </div>
     </section>
 
+
+    <!-- CONTACT -->
     <section id="contact" class="section contact">
+
       <div>
         <p class="eyebrow">04 — CONTACT</p>
         <h2>Let's make something <em>fun.</em></h2>
       </div>
+
       <div class="contact-card">
-        <p>Have a project, a pizza recommendation, or a turtle-related question?</p>
-        <button class="primary-btn" id="contactChat">Say hello ↗</button>
+        <p>
+          Have a project, a pizza recommendation, or a turtle-related question?
+        </p>
+
+        <button class="primary-btn" id="contactChat">
+          Say hello ↗
+        </button>
       </div>
+
     </section>
+
   </main>
+
 
   <footer>
     <span>© 2026 Tasmin</span>
     <span>Made with curiosity & too much pizza.</span>
   </footer>
 
+
+  <!-- CHAT PANEL -->
   <aside id="chatPanel" class="chat-panel" aria-hidden="true">
+
     <div class="chat-head">
-      <div><strong>Tasmin's Chat</strong><small>Usually replies eventually</small></div>
+      <div>
+        <strong>Tasmin's Chat</strong>
+        <small>Ask me anything about Tasmin ✨</small>
+      </div>
+
       <button id="chatClose" aria-label="Close chat">×</button>
     </div>
+
+
     <div id="messages" class="messages">
-      <div class="bubble bot">Hey! 👋 Ask me anything about my resume, MIT, pizza, or turtles.</div>
+
+      <div class="bubble bot">
+        Hey! 👋 I'm Tasmin's personal assistant.
+        Ask me anything about Tasmin, his education, skills,
+        personality, experience, or interests!
+      </div>
+
     </div>
+
+
     <form id="chatForm" class="chat-form">
-      <input id="chatInput" type="text" placeholder="Type a message..." autocomplete="off">
+
+      <input
+        id="chatInput"
+        type="text"
+        placeholder="Ask about Tasmin..."
+        autocomplete="off"
+      >
+
       <button type="submit">→</button>
+
     </form>
+
   </aside>
 
+
+  <!-- KEEP YOUR EXISTING GAME.JS -->
   <script src="game.js"></script>
+
+
+  <!-- TASMIN CHAT SYSTEM -->
+  <script>
+
+    /*
+      TASMIN AI-STYLE CHAT
+
+      This chat is designed to:
+      - Understand many different questions about Tasmin
+      - Give positive answers
+      - Use information from the resume
+      - Handle questions that are phrased differently
+      - Never respond negatively about Tasmin
+    */
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const chatForm = document.getElementById("chatForm");
+      const chatInput = document.getElementById("chatInput");
+      const messages = document.getElementById("messages");
+
+      if (!chatForm || !chatInput || !messages) return;
+
+
+      /*
+        Add a message to the chat
+      */
+      function addMessage(text, type) {
+
+        const message = document.createElement("div");
+
+        message.className = "bubble " + type;
+
+        message.textContent = text;
+
+        messages.appendChild(message);
+
+        messages.scrollTop = messages.scrollHeight;
+      }
+
+
+      /*
+        Positive Tasmin responses
+      */
+      function getTasminResponse(question) {
+
+        const q = question
+          .toLowerCase()
+          .replace(/[?!.,]/g, "")
+          .trim();
+
+
+        // WHO IS TASMIN?
+        if (
+          q.includes("who is tasmin") ||
+          q.includes("who's tasmin") ||
+          q.includes("tell me about tasmin") ||
+          q.includes("about tasmin") ||
+          q === "tasmin"
+        ) {
+
+          return "Tasmin is a curious, creative, and enthusiastic MIT graduate who loves solving problems and turning interesting ideas into useful experiences. He's also a big fan of pizza, beach walks, and turtles! 🌟";
+        }
+
+
+        // EDUCATION
+        if (
+          q.includes("mit") ||
+          q.includes("school") ||
+          q.includes("college") ||
+          q.includes("education") ||
+          q.includes("degree") ||
+          q.includes("graduate") ||
+          q.includes("graduated")
+        ) {
+
+          return "Tasmin graduated from MIT in 2026 with a degree in Computer Science. His education helped him develop strong technical, creative, and problem-solving skills. 🎓";
+        }
+
+
+        // AGE
+        if (
+          q.includes("how old") ||
+          q.includes("age") ||
+          q.includes("old is tasmin")
+        ) {
+
+          return "Tasmin is 21 years old. He's young, curious, energetic, and always excited to learn something new! ✨";
+        }
+
+
+        // SKILLS
+        if (
+          q.includes("skill") ||
+          q.includes("good at") ||
+          q.includes("great at") ||
+          q.includes("talent") ||
+          q.includes("talented") ||
+          q.includes("strength") ||
+          q.includes("what can tasmin") ||
+          q.includes("abilities")
+        ) {
+
+          return "Tasmin is especially good at problem solving, design, technology, teamwork, and turning complicated ideas into simple experiences. He's also very creative and curious. 💡";
+        }
+
+
+        // PERSONALITY
+        if (
+          q.includes("personality") ||
+          q.includes("what is tasmin like") ||
+          q.includes("what's tasmin like") ||
+          q.includes("character") ||
+          q.includes("person") ||
+          q.includes("friendly") ||
+          q.includes("nice") ||
+          q.includes("kind")
+        ) {
+
+          return "Tasmin comes across as friendly, curious, creative, positive, and enthusiastic. He enjoys meeting interesting people, learning new things, and working together to solve problems. 😊";
+        }
+
+
+        // GOOD PERSON
+        if (
+          q.includes("good person") ||
+          q.includes("is tasmin good") ||
+          q.includes("do you like tasmin") ||
+          q.includes("is tasmin nice")
+        ) {
+
+          return "Absolutely! Tasmin is presented as a friendly, curious, creative, and enthusiastic person who enjoys helping others and approaching new challenges with a positive attitude. 🌟";
+        }
+
+
+        // WORK / EXPERIENCE
+        if (
+          q.includes("experience") ||
+          q.includes("work") ||
+          q.includes("job") ||
+          q.includes("career") ||
+          q.includes("intern") ||
+          q.includes("research") ||
+          q.includes("researcher") ||
+          q.includes("team lead") ||
+          q.includes("bright labs")
+        ) {
+
+          return "Tasmin has a really interesting range of experience. He worked as a Product Design Intern at Bright Labs, a Student Researcher at MIT, and a Team Lead at Tiny Ideas Club. His experience combines technology, creativity, research, design, and teamwork. 🚀";
+        }
+
+
+        // PRODUCT DESIGN
+        if (
+          q.includes("design") ||
+          q.includes("product design") ||
+          q.includes("bright")
+        ) {
+
+          return "Tasmin worked as a Product Design Intern at Bright Labs, where he designed playful interfaces, tested prototypes, and helped turn complicated ideas into enjoyable products. 🎨";
+        }
+
+
+        // RESEARCH
+        if (
+          q.includes("research") ||
+          q.includes("human computer") ||
+          q.includes("hci")
+        ) {
+
+          return "At MIT, Tasmin worked as a Student Researcher exploring human-computer interaction and building small experiments. He enjoys asking good questions and finding creative solutions. 🔬";
+        }
+
+
+        // LEADERSHIP
+        if (
+          q.includes("leader") ||
+          q.includes("leadership") ||
+          q.includes("team") ||
+          q.includes("lead a team")
+        ) {
+
+          return "Tasmin has leadership experience from his time as Team Lead at Tiny Ideas Club. He helped a creative team build prototypes, games, and ambitious projects while bringing people together around new ideas. 🤝";
+        }
+
+
+        // HOBBIES
+        if (
+          q.includes("hobby") ||
+          q.includes("hobbies") ||
+          q.includes("free time") ||
+          q.includes("fun") ||
+          q.includes("does tasmin do")
+        ) {
+
+          return "Tasmin enjoys long walks on the beach, finding great pizza, hanging out with turtles, trying new things, and exploring interesting ideas. 🐢🍕🌴";
+        }
+
+
+        // PIZZA
+        if (
+          q.includes("pizza") ||
+          q.includes("food") ||
+          q.includes("eat")
+        ) {
+
+          return "Tasmin is a serious pizza enthusiast! 🍕 Finding great pizza is basically one of his hobbies, and he's always ready to investigate another slice.";
+        }
+
+
+        // BEACH
+        if (
+          q.includes("beach") ||
+          q.includes("walk") ||
+          q.includes("walking")
+        ) {
+
+          return "Tasmin loves taking long walks on the beach. It's one of his favorite ways to relax, think, and enjoy some time outside. 🌴";
+        }
+
+
+        // TURTLES
+        if (
+          q.includes("turtle") ||
+          q.includes("turtles")
+        ) {
+
+          return "Tasmin definitely has a soft spot for turtles! 🐢 They're practically part of his personal brand at this point.";
+        }
+
+
+        // PROJECTS
+        if (
+          q.includes("project") ||
+          q.includes("projects") ||
+          q.includes("build") ||
+          q.includes("building") ||
+          q.includes("create") ||
+          q.includes("creative")
+        ) {
+
+          return "Tasmin enjoys building creative projects and turning unusual ideas into something useful. He's especially interested in technology, design, prototypes, games, and experiences that people can enjoy. 🚀";
+        }
+
+
+        // TECHNOLOGY
+        if (
+          q.includes("technology") ||
+          q.includes("computer") ||
+          q.includes("coding") ||
+          q.includes("programming") ||
+          q.includes("computer science")
+        ) {
+
+          return "Technology is a major part of Tasmin's background. With a Computer Science degree from MIT, he enjoys using technology to solve problems and create useful experiences. 💻";
+        }
+
+
+        // CREATIVE
+        if (
+          q.includes("creative") ||
+          q.includes("creativity") ||
+          q.includes("imagination")
+        ) {
+
+          return "Tasmin is highly creative and enjoys turning unusual ideas into real projects. He likes experimenting, designing, and asking 'What if?' when solving problems. 💡";
+        }
+
+
+        // WHY HIRE TASMIN
+        if (
+          q.includes("hire") ||
+          q.includes("why should") ||
+          q.includes("work with tasmin") ||
+          q.includes("employee")
+        ) {
+
+          return "Tasmin brings together strong technical knowledge, creativity, problem-solving, teamwork, and a positive attitude. He enjoys learning quickly and turning ideas into useful results. 🚀";
+        }
+
+
+        // CONTACT
+        if (
+          q.includes("contact") ||
+          q.includes("email") ||
+          q.includes("reach")
+        ) {
+
+          return "Tasmin is available for interesting projects and new ideas. The Contact section of this website is the best place to start! ✨";
+        }
+
+
+        // POSITIVE ANSWER TO NEGATIVE QUESTIONS
+        if (
+          q.includes("bad") ||
+          q.includes("worst") ||
+          q.includes("hate") ||
+          q.includes("dislike") ||
+          q.includes("failure") ||
+          q.includes("weak")
+        ) {
+
+          return "Tasmin's resume presents him in a very positive way: he's curious, creative, hardworking, and always interested in learning. He sees challenges as opportunities to improve and try something new. 🌟";
+        }
+
+
+        // DEFAULT RESPONSE
+        return "Tasmin comes across as a curious, creative, positive, and enthusiastic person. He's passionate about technology, problem solving, design, teamwork, pizza, beach walks, and exploring new ideas. Ask me about his education, skills, experience, personality, or hobbies! 😊";
+
+      }
+
+
+      /*
+        Handle chat submission
+      */
+      chatForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const question = chatInput.value.trim();
+
+        if (!question) return;
+
+
+        // Show user's question
+        addMessage(question, "user");
+
+        chatInput.value = "";
+
+
+        // Small delay makes the chat feel more natural
+        setTimeout(function () {
+
+          const answer = getTasminResponse(question);
+
+          addMessage(answer, "bot");
+
+        }, 350);
+
+      });
+
+    });
+
+  </script>
+
 </body>
 </html>
